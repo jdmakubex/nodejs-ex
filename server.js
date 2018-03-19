@@ -98,6 +98,8 @@ app.use(function(err, req, res, next){
   res.status(500).send('Something bad happened!');
 });
 
+app.use(express.static('views'));
+
 initDb(function(err){
   console.log('Error connecting to Mongo. Message:\n'+err);
 });
