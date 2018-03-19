@@ -1,0 +1,142 @@
+[
+  {
+    "id": 6175863,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 3126764,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.77366377194047
+  },
+  {
+    "id": 3168108,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.77366377194047
+  },
+  {
+    "id": 6175804,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 6173332,
+    "descripcion_estrato_personal_ocupado": "6 a 10 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 50.01475474764148
+  },
+  {
+    "id": 3108348,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.625754884715946
+  },
+  {
+    "id": 3097287,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.625754884715946
+  },
+  {
+    "id": 3073050,
+    "descripcion_estrato_personal_ocupado": "11 a 30 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 63.20096303431812
+  },
+  {
+    "id": 3155671,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.77366377194047
+  },
+  {
+    "id": 6175830,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 6173328,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 3234735,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.25835548779463
+  },
+  {
+    "id": 6173779,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 6175785,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 6175545,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 6175782,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 53.42597253974158
+  },
+  {
+    "id": 3075902,
+    "descripcion_estrato_personal_ocupado": "6 a 10 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 59.24619315843356
+  },
+  {
+    "id": 6174986,
+    "descripcion_estrato_personal_ocupado": "31 a 50 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 49.28547037554996
+  },
+  {
+    "id": 3107775,
+    "descripcion_estrato_personal_ocupado": "0 a 5 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 54.625754884715946
+  },
+  {
+    "id": 3055279,
+    "descripcion_estrato_personal_ocupado": "6 a 10 personas",
+    "actividad": 11,
+    "label": 11,
+    "prediccion": 59.31038595750441
+  }
+]
