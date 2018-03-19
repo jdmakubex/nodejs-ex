@@ -21,17 +21,14 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
+
+
+      <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.bootstrap.min.css"/>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
-
-<!-- Latest compiled and minified Locales -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
 
   </head>
 
@@ -88,27 +85,23 @@
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
-      <script type="text/javascript">
-              $('#table').bootstrapTable({
-          url: './json/datos.json',
-          columns: [{
-              field: 'id',
-              title: 'ID'
-          }, {
-              field: 'descripcion_estrato_personal_ocupado',
-              title: 'Personal Ocupado'
-          }, {
-              field: 'actividad',
-              title: 'Actividad'
-          },{
-              field: 'label',
-              title: 'Label'
-          },{
-              field: 'prediccion',
-              title: 'Predicción'
-          }, ]
-      });
-    </script>
+        <div class="row">
+            <div class="col-md-12">
+                <table width="100%" id="datatable" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Desc. Estrato personal ocupado</th>
+                            <th>Actividad</th>
+                            <th>Label</th>
+                            <th>Predicción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido-tabla">
+                    </tbody>
+                </table>
+            </div>
+        </div>
       </div>
     </section>
 
@@ -188,8 +181,26 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/responsive.bootstrap.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.getJSON('/json/datos.json', function(dataResult){
+                console.log(dataResult);
+                $('#contenido-tabla').html('');
+                $.each(dataResult, function(i, item){
+                    var html = '<tr><td>'+item.id+'</td><td>'+item.descripcion_estrato_personal_ocupado+'</td><td>'+item.actividad+'</td><td>'+item.label+'</td><td>'+item.prediccion+'</td></tr>'
+                    $('#contenido-tabla').append(html);
+                });
+                $('#datatable').DataTable({responsive: true, "paging": false,info: false, searching: false});
+
+            });
+        });
+    </script>
 
 
 
