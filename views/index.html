@@ -189,7 +189,7 @@
     <script src="js/freelancer.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $.getJSON('/json/datos.json', function(dataResult){
+            $.getJSON('./json/datos.json', function(dataResult){
                 console.log(dataResult);
                 $('#contenido-tabla').html('');
                 $.each(dataResult, function(i, item){
